@@ -1,0 +1,150 @@
+.rajasthan-dishes-container {
+  padding: 20px;
+  background: linear-gradient(to right,#d8f3dc, #b7e4c7, #95d5b2, #74c69d, #52b788, #40916c, #2d6a4f, #1b4332, #081c15);
+  text-align: center;
+  position: relative;
+}
+
+.rajasthan-dishes-container .title{
+  font-size: 50px;
+  padding-left: 20%;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(211, 211, 211, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.message-content.adding::before {
+  content: '';
+  display: block;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url('./images/smileyhappy1.gif');
+  background-size: cover;
+}
+
+.message-content.removing {
+  position: relative;
+}
+
+.message-content.removing::before {
+  content: '';
+  display: block;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url('./images/smileydull1.gif');
+  background-size: cover;
+}
+
+.message {
+  color: white;
+  font-size: 1.5em;
+}
+
+.dishes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dish-square {
+  width: calc(33.333% - 20px);
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.dish-square:hover {
+  transform: scale(1.05);
+}
+
+.dish1rj { background-image: url('./images/dalbaatichurma1.jpg'); }
+.dish2rj { background-image: url('./images/gattekisabzi1.jpg'); }
+.dish3rj { background-image: url('./images/laalmaas1.jpg'); }
+.dish4rj { background-image: url('./images/kersangri1.jpg'); }
+.dish5rj { background-image: url('./images/pyaazkachori1.jpeg'); }
+.dish6rj { background-image: url('./images/besangatte1.jpeg'); }
+.dish7rj { background-image: url('./images/mohanthaal1.jpg'); }
+.dish8rj { background-image: url('./images/rajasthanikadhi1.jpg'); }
+.dish9rj { background-image: url('./images/balushahi1.jpg'); }
+.dish10rj { background-image: url('./images/ghevar1.jpg'); }
+.dish11rj { background-image: url('./images/malaighewar1.jpg'); }
+.dish12rj { background-image: url('./images/kalmivada1.jpg'); }
+.dish13rj { background-image: url('./images/jodhpuri-mirchi-vada1.webp'); }
+.dish14rj { background-image: url('./images/churmaladoo1.jpg'); }
+.dish15rj { background-image: url('./images/rajasthanisamosa1.jpg'); }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.view-recipe-button, .favourites-button {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-recipe-button:hover, .favourites-button:hover {
+  background-color: #1d1d1d;
+}
+
+.star-icon {
+  margin-right: 5px;
+}

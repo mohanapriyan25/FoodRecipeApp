@@ -1,0 +1,100 @@
+.login-page-body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url('./images/login1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25%;
+}
+
+.login-page {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background: rgba(240, 235, 235, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  margin: auto;
+  color: #000000;
+}
+
+.login-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login-page .form-group {
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.login-page label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.login-page input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+  background: rgba(239, 233, 233, 0.8);
+  box-shadow: #d6cece;
+  outline: rgb(84, 84, 84); 
+}
+
+.login-page button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3858e8;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-page button:hover {
+  background-color: #3858e8;
+}
+
+.login-page .error {
+  color: #826a6a;
+  margin-bottom: 15px;
+}
+
+.login-page p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.login-page a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-page a:hover {
+  text-decoration: underline;
+  color: #ff0000;
+}

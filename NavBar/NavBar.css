@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(to right,#d8f3dc, #b7e4c7, #95d5b2, #74c69d, #52b788, #40916c, #2d6a4f, #1b4332, #081c15); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right,#ffffff, #bdbdbd, #313131);
+  padding: 0.1rem 2rem; 
+  border-radius: 20px; 
+  margin: 1rem; 
+  box-shadow: 0 8px 9px rgba(0, 0, 0, 0.1); 
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 40px; 
+  width: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 90px; 
+  position: relative; 
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 23px; 
+  transition: color 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-links a:hover {
+  color: #ffffff; 
+}
+
+.user-name {
+  font-size: 23px; 
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  cursor: pointer; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative; 
+}
+
+.user-name:hover {
+  color: #ff5733;
+}
+
+.user-profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.user-name:hover .user-profile-image {
+  transform: scale(1.1);
+}
+
+.sidebar-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  z-index: 1000; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.user-name:hover .sidebar-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-menu button {
+  display: flex;
+  align-items: center;
+  border: none;
+  font-size: 18px;
+  background-color: #fff;
+  color: #191919;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-menu button:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-menu button:hover {
+  background-color: #6e6e6e; 
+  color: #ffffff; 
+  transform: scale(1.05);
+}
+
+.sidebar-icon {
+  margin-right: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: filter 0.3s ease;
+}
+
+.sidebar-menu button:hover .sidebar-icon {
+  filter: brightness(1.2);
+}

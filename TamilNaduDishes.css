@@ -1,0 +1,261 @@
+.tamilnadu-dishes-container {
+  padding: 20px;
+  background: linear-gradient(to right,#d8f3dc, #b7e4c7, #95d5b2, #74c69d, #52b788, #40916c, #2d6a4f, #1b4332, #081c15);
+  text-align: center;
+  position: relative;
+}
+
+.tamilnadu-dishes-container .title {
+  font-size: 50px;
+  padding-left: 20%;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-right: 15%;
+  margin-right: 20%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.message-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.message-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.message-content.adding::before {
+  content: '';
+  display: block;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url('./images/smileyhappy1.gif');
+  background-size: cover;
+}
+
+.message-content.removing {
+  position: relative;
+}
+
+.message-content.removing::before {
+  content: '';
+  display: block;
+  margin-bottom: 10px;
+  width: 100px;
+  height: 100px;
+  background-image: url('./images/smileydull1.gif');
+  background-size: cover;
+}
+
+.message {
+  color: white;
+  font-size: 1.5em;
+}
+
+.dishes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dish-square {
+  width: calc(33.333% - 20px);
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.dish-square:hover {
+  transform: scale(1.05);
+}
+
+.dish1tn { background-image: url('./images/idly1.jpg'); }
+.dish2tn { background-image: url('./images/pongal1.jpeg'); }
+.dish3tn { background-image: url('./images/dosa1.jpg'); }
+.dish4tn { background-image: url('./images/vada1.jpg'); }
+.dish5tn { background-image: url('./images/sambar1.webp'); }
+.dish6tn { background-image: url('./images/rasam1.jpg'); }
+.dish7tn { background-image: url('./images/kootu1.jpg'); }
+.dish8tn { background-image: url('./images/poriyal1.webp'); }
+.dish9tn { background-image: url('./images/chickenkulambu1.jpg'); }
+.dish10tn { background-image: url('./images/payasam1.jpg'); }
+.dish11tn { background-image: url('./images/chickenbiryani1.png'); }
+.dish12tn { background-image: url('./images/parotta1.jpg'); }
+.dish13tn { background-image: url('./images/curdrice1.webp'); }
+.dish14tn { background-image: url('./images/karidosa1.jpeg'); }
+.dish15tn { background-image: url('./images/adai1.webp'); }
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.view-recipe-button,
+.favourites-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-recipe-button:hover,
+.favourites-button:hover {
+  background-color: initial; 
+  color: inherit; 
+}
+
+.star-icon {
+  margin-right: 5px;
+}
+
+.recipe-page {
+  padding: 20px;
+}
+
+.recipe-page .back-button {
+  margin-bottom: 20px;
+  background-color: #ff0000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.recipe-page .back-button:hover {
+  background-color: #ff0000;
+}
+
+
+.recipe-content {
+  display: flex;
+  padding: 2.5%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.recipe-video {
+  flex: 1;
+  min-width: 45%;
+}
+
+.recipe-video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.recipe-details {
+  flex: 1;
+  min-width: 45%;
+  background-color: #d1d77e!important;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-details h2 {
+  margin-top: 0;
+  color: rgb(255, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.recipe-details h3 {
+  margin-bottom: 10px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.recipe-details ul {
+  list-style-type: disc;
+  padding-left: 40px; 
+  text-align: left;  
+}
+
+.recipe-details li{
+  font-size: 19px;
+  text-align: left;
+}
+
+.recipe-details p {
+  line-height: 1.5;
+  text-align: left;   
+  font-size: 19px;
+}
+
+.show-favourites-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-favourites-button:hover {
+  background-color: #0056b3;
+}
